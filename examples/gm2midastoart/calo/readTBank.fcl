@@ -1,0 +1,51 @@
+//Read a calo T bank
+
+process_name : readTBank
+
+source : {
+
+  module_type : RootInput
+  fileNames   : ["./midasBankInput4109.root"]
+  maxEvents   : -1
+
+}
+
+services : {
+
+  message : {
+
+     debugModules : ["*"]
+     suppressInfo : []
+     
+     destinations : {
+       LogToConsole : {
+         type      : "cout"
+         threshold : "DEBUG"
+       }
+       LogToFile : {
+         type : "file"
+         filename : "readTBank.log"
+         append : false
+         threshold : "DEBUG"
+       }
+     }
+
+  }//message
+
+}
+
+
+physics : {
+
+  analyzers : {
+    readTBank : {
+      module_type : ReadBankExampleT
+    }   
+  }
+
+  readBank : [ readTBank ]
+  end_paths : [ readBank ]
+
+}
+
+

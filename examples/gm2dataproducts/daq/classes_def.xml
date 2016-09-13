@@ -1,0 +1,112 @@
+<!--  art::Wrapper lines need only top level data product objects  -->
+
+<lcgdict>
+
+    <!-- Trigger art record -->
+    <class name="gm2common::TriggerArtRecord"/>
+    <class name="art::Wrapper< gm2common::TriggerArtRecord >"/>
+    <class name="art::Ptr< gm2common::TriggerArtRecord >"/>
+
+    <!-- GPS art record -->
+    <class name="gm2common::GPSArtRecord"/>
+    <class name="art::Wrapper< gm2common::GPSArtRecord >"/>
+    <class name="art::Ptr< gm2common::GPSArtRecord >"/>
+
+    <!-- MIDAS art records... -->
+
+    <class name="std::vector<int16_t>"/> 
+    <class name="std::vector<uint16_t>"/>
+    <class name="std::vector<uint32_t>"/>
+    <class name="std::vector<uint64_t>"/>
+
+    <class name="std::vector<std::string>"/>
+    <class name="gm2midastoart::MidasEventHeaderArtRecord"/>
+    <class name="art::Wrapper< gm2midastoart::MidasEventHeaderArtRecord >"/>
+
+    <class name="gm2midastoart::MidasODBArtRecord"/>
+    <class name="std::vector< gm2midastoart::MidasODBArtRecord >"/>
+    <class name="art::Wrapper< gm2midastoart::MidasODBArtRecord >"/>
+    
+    <class name="gm2midastoart::MidasEventArtRecord<gm2midastoart::MasterTriggerBank>"/>
+    <class name="art::Wrapper< gm2midastoart::MidasEventArtRecord<gm2midastoart::MasterTriggerBank> >"/>
+    <class name="std::vector< gm2midastoart::MidasEventArtRecord<gm2midastoart::MasterTriggerBank> >"/>
+    <class name="art::Wrapper< std::vector< gm2midastoart::MidasEventArtRecord<gm2midastoart::MasterTriggerBank> > >"/>
+    <class name="art::Ptr< gm2midastoart::MidasEventArtRecord<gm2midastoart::MasterTriggerBank> >"/>
+    <class name="std::vector< art::Ptr< gm2midastoart::MidasEventArtRecord<gm2midastoart::MasterTriggerBank> > >"/>
+
+    <class name="gm2midastoart::MidasEventArtRecord<gm2midastoart::GPSBank>"/>
+    <class name="art::Wrapper< gm2midastoart::MidasEventArtRecord<gm2midastoart::GPSBank> >"/>
+    <class name="std::vector< gm2midastoart::MidasEventArtRecord<gm2midastoart::GPSBank> >"/>
+    <class name="art::Wrapper< std::vector< gm2midastoart::MidasEventArtRecord<gm2midastoart::GPSBank> > >"/>
+    <class name="art::Ptr< gm2midastoart::MidasEventArtRecord<gm2midastoart::GPSBank> >"/>
+    <class name="std::vector< art::Ptr< gm2midastoart::MidasEventArtRecord<gm2midastoart::GPSBank> > >"/>
+
+    <class name="gm2midastoart::MidasEventArtRecord<gm2midastoart::TrackerBank>"/>
+    <class name="art::Wrapper< gm2midastoart::MidasEventArtRecord<gm2midastoart::TrackerBank> >"/>
+    <class name="std::vector< gm2midastoart::MidasEventArtRecord<gm2midastoart::TrackerBank> >"/>
+    <class name="art::Wrapper< std::vector< gm2midastoart::MidasEventArtRecord<gm2midastoart::TrackerBank> > >"/>
+    <class name="art::Ptr< gm2midastoart::MidasEventArtRecord<gm2midastoart::TrackerBank> >"/>
+    <class name="std::vector< art::Ptr< gm2midastoart::MidasEventArtRecord<gm2midastoart::TrackerBank> > >"/>
+
+    <class name="gm2midastoart::MidasEventArtRecord<gm2midastoart::TrackerGLIBBank>"/>
+    <class name="art::Wrapper< gm2midastoart::MidasEventArtRecord<gm2midastoart::TrackerGLIBBank> >"/>
+    <class name="std::vector< gm2midastoart::MidasEventArtRecord<gm2midastoart::TrackerGLIBBank> >"/>
+    <class name="art::Wrapper< std::vector< gm2midastoart::MidasEventArtRecord<gm2midastoart::TrackerGLIBBank> > >"/>
+    <class name="art::Ptr< gm2midastoart::MidasEventArtRecord<gm2midastoart::TrackerGLIBBank> >"/>
+    <class name="std::vector< art::Ptr< gm2midastoart::MidasEventArtRecord<gm2midastoart::TrackerGLIBBank> > >"/>
+
+    <class name="gm2midastoart::MidasEventArtRecord<gm2midastoart::TrackerSlowBank>"/>
+    <class name="art::Wrapper< gm2midastoart::MidasEventArtRecord<gm2midastoart::TrackerSlowBank> >"/>
+    <class name="std::vector< gm2midastoart::MidasEventArtRecord<gm2midastoart::TrackerSlowBank> >"/>
+    <class name="art::Wrapper< std::vector< gm2midastoart::MidasEventArtRecord<gm2midastoart::TrackerSlowBank> > >"/>
+    <class name="art::Ptr< gm2midastoart::MidasEventArtRecord<gm2midastoart::TrackerSlowBank> >"/>
+    <class name="std::vector< art::Ptr< gm2midastoart::MidasEventArtRecord<gm2midastoart::TrackerSlowBank> > >"/>
+
+    <class name="gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloHeaderBank>"/>
+    <class name="art::Wrapper< gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloHeaderBank> >"/>
+    <class name="std::vector< gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloHeaderBank> >"/>
+    <class name="art::Wrapper< std::vector< gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloHeaderBank> > >"/>
+    <class name="art::Ptr< gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloHeaderBank> >"/>
+    <class name="std::vector< art::Ptr< gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloHeaderBank> > >"/>
+
+
+    <class name="gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloRawBank>"/>
+    <class name="art::Wrapper< gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloRawBank> >"/>
+    <class name="std::vector< gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloRawBank> >"/>
+    <class name="art::Wrapper< std::vector< gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloRawBank> > >"/>
+    <class name="art::Ptr< gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloRawBank> >"/>
+    <class name="std::vector< art::Ptr< gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloRawBank> > >"/>
+
+
+    <class name="gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloTBank>"/>
+    <class name="art::Wrapper< gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloTBank> >"/>
+    <class name="std::vector< gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloTBank> >"/>
+    <class name="art::Wrapper< std::vector< gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloTBank> > >"/>
+    <class name="art::Ptr< gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloTBank> >"/>
+    <class name="std::vector< art::Ptr< gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloTBank> > >"/>
+
+
+    <class name="gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloCQBank>"/>
+    <class name="art::Wrapper< gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloCQBank> >"/>
+    <class name="std::vector< gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloCQBank> >"/>
+    <class name="art::Wrapper< std::vector< gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloCQBank> > >"/>
+    <class name="art::Ptr< gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloCQBank> >"/>
+    <class name="std::vector< art::Ptr< gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloCQBank> > >"/>
+
+
+    <class name="gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloCHBank>"/>
+    <class name="art::Wrapper< gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloCHBank> >"/>
+    <class name="std::vector< gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloCHBank> >"/>
+    <class name="art::Wrapper< std::vector< gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloCHBank> > >"/>
+    <class name="art::Ptr< gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloCHBank> >"/>
+    <class name="std::vector< art::Ptr< gm2midastoart::MidasEventArtRecord<gm2midastoart::CaloCHBank> > >"/>
+
+    <class name="gm2midastoart::MidasEventArtRecord<gm2midastoart::GalilBank>"/>
+    <class name="art::Wrapper< gm2midastoart::MidasEventArtRecord<gm2midastoart::GalilBank> >"/>
+    <class name="std::vector< gm2midastoart::MidasEventArtRecord<gm2midastoart::GalilBank> >"/>
+    <class name="art::Wrapper< std::vector< gm2midastoart::MidasEventArtRecord<gm2midastoart::GalilBank> > >"/>
+    <class name="art::Ptr< gm2midastoart::MidasEventArtRecord<gm2midastoart::GalilBank> >"/>
+    <class name="std::vector< art::Ptr< gm2midastoart::MidasEventArtRecord<gm2midastoart::GalilBank> > >"/>
+
+
+</lcgdict>

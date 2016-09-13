@@ -1,0 +1,52 @@
+//This is a simple example of how to access MIDAS banks in an art event (in this cases prints the first few words)
+//Tom Stuttard (3rd August 2016)
+
+process_name : examplePrintBank
+
+source : {
+
+  module_type : RootInput
+  fileNames   : ["./exampleParseMidasFile.root"]
+  maxEvents   : -1
+
+}
+
+services : {
+
+  message : {
+
+     debugModules : ["*"]
+     suppressInfo : []
+     
+     destinations : {
+       LogToConsole : {
+         type      : "cout"
+         threshold : "DEBUG"
+       }
+       LogToFile : {
+         type : "file"
+         filename : "examplePrintBank.log"
+         append : false
+         threshold : "DEBUG"
+       }
+     }
+
+  }//message
+
+}
+
+
+physics : {
+
+  analyzers : {
+    readBankExample : {
+      module_type : PrintBankExample
+    }   
+  }
+
+  readBank : [ readBankExample ]
+  end_paths : [ readBank ]
+
+}
+
+

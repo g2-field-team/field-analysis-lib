@@ -1,0 +1,63 @@
+//Fill an art file with MIDAS data from a .mid file
+//Tom Stuttard (3rd August 2016)
+
+process_name : exampleParseMidasFile
+
+source : {
+
+  module_type : MidasBankInput
+
+  //Parameters parsed by the art::Source class template.
+  fileNames   : [ "./run00176.mid" ]
+  maxEvents   : -1
+
+  //Parameters parsed by the detail class
+  detail : {
+     bankNames  : [ "GALI" ]
+     maxToPrint : 100
+     online     : false
+  }
+
+}
+
+services : {
+
+  message : {
+
+     debugModules : ["*"]
+     suppressInfo : []
+     
+     destinations : {
+       LogToConsole : {
+         type      : "cout"
+         threshold : "DEBUG"
+       }
+       LogToFile : {
+         type : "file"
+         filename : "exampleParseMidasFile.log"
+         append : false
+         threshold : "DEBUG"
+       }
+     }
+
+  }//message
+
+}
+
+
+physics : {
+
+  writeFile : [ outfile ]
+  end_paths : [ writeFile ]
+
+}
+
+outputs : {
+
+  outfile: {
+    module_type : RootOutput
+    fileName    : "exampleParseMidasFile.root"
+ }
+
+}
+

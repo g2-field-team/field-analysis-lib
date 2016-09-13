@@ -1,0 +1,82 @@
+//Run MIDAS-to-art in online mode (read from mserver socket)
+//WARNING: Do no use "-s" or "-S" arguments when running this script (do not want input files, use a socket instead)
+//Tom Stuttard (4th July 2016)
+
+process_name : midasInputOnline
+
+source : {
+
+  module_type : MidasBankInput
+
+  //Parameters parsed by the art::Source class template.
+  //art makes us provide an input file buy don't need one when input is a socket
+  //Provide a single fileName (as only want to run once) that exists here to get around this,
+  //but it will never be used. Chose "/dev/null" as should always be present on linux/mac.
+  fileNames   : [ "/dev/null" ]
+
+  //Parameters parsed by the detail class
+  detail : {
+     bankNames                     : [ "TRIG", "STRW" ]
+     online                        : true
+     mserverHost                   : "localhost:7070"
+     midasExperimentName           : "gm2"
+     analyzerName                  : "DQM"
+     connectToMidasMessageSystem   : false
+     maxBankWordsToPrint           : 5
+  }
+
+}
+
+services : {
+
+  message : {
+
+     debugModules : ["*"]
+     suppressInfo : []
+     
+     destinations : {
+       LogToConsole : {
+         type      : "cout"
+         threshold : "INFO"
+       }
+       LogToFile : {
+         type : "file"
+         filename : "midasInputOnline.log"
+         append : false
+         threshold : "DEBUG"
+       }
+     }
+
+  }//message
+
+
+  TFileService: {
+    fileName: "dummy.root"
+  }
+
+}
+
+
+physics : {
+
+  analyzers: {
+
+    printODB: { 
+      module_type        : PrintODB 
+      printFullODB       : true
+      printContents      : false
+      printEquipmentList : false
+    }
+
+  }//analyzers
+
+
+  // Define paths/streams
+  verificationPath: [ printODB ] //Add "verificationPath" to end_paths if want to check things are working
+
+  //List trigger (producer/filter) and end (analyzer/output) paths
+  trigger_paths : [ ]
+  end_paths     : [ ]
+
+}
+

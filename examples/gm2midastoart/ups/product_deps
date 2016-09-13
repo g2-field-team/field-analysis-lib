@@ -1,0 +1,41 @@
+# This @product_deps@ file defines dependencies for this package. 
+
+# The *parent* line must the first non-commented line and defines this product and version
+# The version must be of the form vxx_yy_zz (e.g. v01_02_03)
+parent gm2midastoart v0_00_01
+defaultqual e7
+
+# These optional lines define where headers, libraries, and executables go and should
+# be used only if your product does not conform to the defaults.
+# Format: directory_type directory_path directory_name
+#   where directory_type is one of incdir, libdir, or bindir
+#   where directory_path is one of product_dir, fq_dir and - 
+
+incdir  product_dir     include
+libdir  fq_dir          lib
+bindir  fq_dir          bin
+flcdir  product_dir     fcl
+
+# With "product  version" table below, we now define depdendencies
+# Add the dependent product and version
+
+product          version
+art              v1_13_01
+cetbuildtools    v4_08_01	-	only_for_build
+gm2dataproducts  v3_03_00
+end_product_list
+
+# We now define allowed qualifiers and the corresponding qualifiers for the depdencies.
+# Make a table by adding columns before "notes". 
+qualifier        art        gm2dataproducts  notes
+e7:debug         e7:debug   e7:debug 
+e7:opt           e7:opt     e7:opt 
+e7:prof          e7:prof    e7:prof
+end_qualifier_list
+
+
+# Preserve tabs and formatting in emacs and vi / vim:
+
+### Local Variables:
+### tab-width: 8
+### End:

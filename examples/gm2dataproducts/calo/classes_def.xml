@@ -1,0 +1,133 @@
+<!--  art::Wrapper lines need only top level data product objects  -->
+
+<lcgdict>
+
+    <!-- For CDFHeader - note that using the typedef will not work here-->
+    <class name="gm2calo::CDFHeader"/>
+    <class name="std::vector< gm2calo::CDFHeader >"/>
+    <class name="art::Wrapper< std::vector< gm2calo::CDFHeader > >"/>
+    <class name="art::Ptr< gm2calo::CDFHeader >"/>
+    
+    <!-- For AMCHeader - note that using the typedef will not work here-->
+    <class name="gm2calo::AMCHeader"/>
+    <class name="std::vector< gm2calo::AMCHeader >"/>
+    <class name="art::Wrapper< std::vector< gm2calo::AMCHeader > >"/>
+    <class name="art::Ptr< gm2calo::AMCHeader >"/>
+    
+    <!-- For FC7Header - note that using the typedef will not work here-->
+    <class name="gm2calo::FC7Header"/>
+    <class name="std::vector< gm2calo::FC7Header >"/>
+    <class name="art::Wrapper< std::vector< gm2calo::FC7Header > >"/>
+    <class name="art::Ptr< gm2calo::FC7Header >"/>
+    
+    <!-- For RiderChannelHeader - note that using the typedef will not work here-->
+    <class name="gm2calo::RiderChannelHeader"/>
+    <class name="std::vector< gm2calo::RiderChannelHeader >"/>
+    <class name="art::Wrapper< std::vector< gm2calo::RiderChannelHeader > >"/>
+    <class name="art::Ptr< gm2calo::RiderChannelHeader >"/>
+    
+    <!-- For Rider - note that using the typedef will not work here-->
+    <class name="gm2calo::RiderArtRecord"/>
+    <class name="std::vector< gm2calo::RiderArtRecord >"/>
+    <class name="art::Wrapper< std::vector< gm2calo::RiderArtRecord > >"/>
+    <class name="art::Ptr< gm2calo::RiderArtRecord  >"/>
+
+    <!-- For CaloRider - note that using the typedef will not work here-->
+    <class name="gm2calo::CaloRiderArtRecord"/>
+    <class name="std::vector< gm2calo::CaloRiderArtRecord >"/>
+    <class name="art::Wrapper< gm2calo::CaloRiderArtRecord >"/>
+    <class name="art::Ptr< gm2calo::CaloRiderArtRecord >"/>
+    <class name="art::Wrapper< std::vector< gm2calo::CaloRiderArtRecord > >"/>
+
+    <!-- For Island - note that using the typedef will not work here-->
+    <class name="gm2calo::IslandArtRecord"/>
+    <class name="std::vector< gm2calo::IslandArtRecord >"/>
+    <class name="art::Wrapper< std::vector< gm2calo::IslandArtRecord > >"/>
+    <class name="art::Ptr< gm2calo::IslandArtRecord  >"/>
+
+    <!-- For MatrixIsland - note that using the typedef will not work here-->
+    <class name="gm2calo::MatrixIslandArtRecord"/>
+    <class name="std::vector< gm2calo::MatrixIslandArtRecord >"/>
+    <class name="art::Wrapper< std::vector< gm2calo::MatrixIslandArtRecord > >"/>
+    <class name="art::Ptr< gm2calo::MatrixIslandArtRecord  >"/>
+
+    <!-- For CaloIsland - note that using the typedef will not work here-->
+    <class name="gm2calo::CaloIslandArtRecord"/>
+    <class name="std::vector< gm2calo::CaloIslandArtRecord >"/>
+    <class name="art::Wrapper< std::vector< gm2calo::CaloIslandArtRecord > >"/>
+    <class name="art::Ptr< gm2calo::CaloIslandArtRecord  >"/>
+
+    <!-- For FitResult - note that using the typedef will not work here-->
+    <class name="gm2calo::FitResultArtRecord"/>
+    <class name="std::vector< gm2calo::FitResultArtRecord >"/>
+    <class name="art::Wrapper< std::vector< gm2calo::FitResultArtRecord > >"/>
+    <class name="art::Ptr< gm2calo::FitResultArtRecord >"/>
+
+    <!-- For Italiano - note that using the typedef will not work here-->
+    <class name="gm2calo::ItalianoArtRecord"/>
+    <class name="std::vector< gm2calo::ItalianoArtRecord >"/>
+    <class name="art::Wrapper< std::vector< gm2calo::ItalianoArtRecord > >"/>
+    <class name="art::Ptr< gm2calo::ItalianoArtRecord >"/>
+
+    <!-- For MatrixFitResult - note that using the typedef will not work here-->
+    <class name="gm2calo::MatrixFitResultArtRecord"/>
+    <class name="std::vector< gm2calo::MatrixFitResultArtRecord >"/>
+    <class name="art::Wrapper< std::vector< gm2calo::MatrixFitResultArtRecord > >"/>
+    <class name="art::Ptr< gm2calo::MatrixFitResultArtRecord >"/>
+
+    <!-- For CaloFitResult - note that using the typedef will not work here-->
+    <class name="gm2calo::CaloFitResultArtRecord"/>
+    <class name="std::vector< gm2calo::CaloFitResultArtRecord >"/>
+    <class name="art::Wrapper< std::vector< gm2calo::CaloFitResultArtRecord > >"/>
+    <class name="art::Ptr< gm2calo::CaloFitResultArtRecord >"/>
+
+    <!-- For CrystalHit - note that using the typedef will not work here-->
+    <class name="gm2calo::CrystalHitArtRecord"/>
+    <class name="std::vector< gm2calo::CrystalHitArtRecord >"/>
+    <class name="art::Wrapper< std::vector< gm2calo::CrystalHitArtRecord > >"/>
+    <class name="art::Ptr< gm2calo::CrystalHitArtRecord  >"/>
+
+    <!-- For MatrixCrystalHit - note that using the typedef will not work here-->
+    <class name="gm2calo::MatrixCrystalHitArtRecord"/>
+    <class name="std::vector< gm2calo::MatrixCrystalHitArtRecord >"/>
+    <class name="art::Wrapper< std::vector< gm2calo::MatrixCrystalHitArtRecord > >"/>
+    <class name="art::Ptr< gm2calo::MatrixCrystalHitArtRecord  >"/>
+
+    <!-- For CaloCrystalHit - note that using the typedef will not work here-->
+    <class name="gm2calo::CaloCrystalHitArtRecord"/>
+    <class name="std::vector< gm2calo::CaloCrystalHitArtRecord >"/>
+    <class name="art::Wrapper< std::vector< gm2calo::CaloCrystalHitArtRecord > >"/>
+    <class name="art::Ptr< gm2calo::CaloCrystalHitArtRecord  >"/>
+
+    <!-- For Cluster - note that using the typedef will not work here-->
+    <class name="gm2calo::ClusterArtRecord"/>
+    <class name="std::vector< gm2calo::ClusterArtRecord >"/>
+    <class name="art::Wrapper< std::vector< gm2calo::ClusterArtRecord > >"/>
+    <class name="art::Ptr< gm2calo::ClusterArtRecord  >"/>
+
+    <!-- For CaloCluster - note that using the typedef will not work here-->
+    <class name="gm2calo::CaloClusterArtRecord"/>
+    <class name="std::vector< gm2calo::CaloClusterArtRecord >"/>
+    <class name="art::Wrapper< std::vector< gm2calo::CaloClusterArtRecord > >"/>
+    <class name="art::Ptr< gm2calo::CaloClusterArtRecord  >"/>
+
+    <!-- For QHist - note that using the typedef will not work here-->
+    <class name="gm2calo::QHistArtRecord"/>
+    <class name="std::vector< gm2calo::QHistArtRecord >"/>
+    <class name="art::Wrapper< std::vector< gm2calo::QHistArtRecord > >"/>
+    <class name="art::Ptr< gm2calo::QHistArtRecord  >"/>
+
+    <!-- For QHist - note that using the typedef will not work here-->
+    <class name="gm2calo::CaloQHistArtRecord"/>
+    <class name="std::vector< gm2calo::CaloQHistArtRecord >"/>
+    <class name="art::Wrapper< std::vector< gm2calo::CaloQHistArtRecord > >"/>
+    <class name="art::Ptr< gm2calo::CaloQHistArtRecord  >"/>
+    
+    <!-- For CaloDecimated QHist - note that using the typedef will not work here-->
+    <class name="gm2calo::CaloDeciQHistArtRecord"/>
+    <class name="std::vector< gm2calo::CaloDeciQHistArtRecord >"/>
+    <class name="art::Wrapper< std::vector< gm2calo::CaloDeciQHistArtRecord > >"/>
+    <class name="art::Ptr< gm2calo::CaloDeciQHistArtRecord  >"/>
+
+</lcgdict>
+
