@@ -27,3 +27,6 @@
 *.exe
 *.out
 *.app
+
+# Working area
+gm2Dev*
