@@ -21,7 +21,7 @@ int g2field::NMRFourierTransform::GetNFFT(int N){
    return NFFT;
 }
 //______________________________________________________________________________
-int g2field::NMRFourierTransform::Transform(int N,const std::vector<double>& f,std::vector<double> & F){
+int g2field::NMRFourierTransform::Transform(int N,const std::vector<short>& f,std::vector<double> & F){
    // N = number of input data points
    // f = input data  [f(t)] 
    // F = output data [F(w)]

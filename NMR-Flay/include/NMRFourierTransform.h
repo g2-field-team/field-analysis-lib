@@ -30,7 +30,7 @@ namespace g2field{
       void SetSampleFrequency(double f){fSampleFreq      = f;} 
       void SetZeroPaddingTime(double t){fZeroPaddingTime = t;} 
 
-      int Transform(int N,const std::vector<double>& f,std::vector<double>& F);                     // N = size of f; f = input (time domain), F = output (freq domain); returns number of FFT points  
+      int Transform(int N,const std::vector<short>& f,std::vector<double>& F);                     // N = size of f; f = input (time domain), F = output (freq domain); returns number of FFT points  
       void InverseTransform(int N,const std::vector<double>& F,std::vector<double>& f);             // N = size of f; F = input (freq domain), f = output (time domain) 
 
   };
