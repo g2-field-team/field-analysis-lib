@@ -7,6 +7,10 @@ SODIR  = lib
 SRCDIR = src
 INCDIR = include
 
+PREFIX=/usr/local
+LIBINSTALLDIR=$(PREFIX)/lib
+INCINSTALLDIR=$(PREFIX)/include/g2field/nmr
+
 # Compiler
 CC       = g++
 CPPFLAGS = -Wall -I$(INCDIR) -O2 -fPIC -g  \
@@ -65,3 +69,11 @@ define make-repo
 	done
 endef
 
+install: 
+.PHONY: install
+
+install:
+	mkdir -p $(LIBINSTALLDIR)
+	install $(SODIR)/* $(LIBINSTALLDIR)
+	mkdir -p $(INCINSTALLDIR)
+	install $(INCDIR)/*.h $(INCINSTALLDIR)

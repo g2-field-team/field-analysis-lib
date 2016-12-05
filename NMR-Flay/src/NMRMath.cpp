@@ -337,7 +337,7 @@ namespace NMRMath{
       return ret_val;
    }
    //______________________________________________________________________________
-   int StoreData(int verbosity,int i,int NPTS,NMRPulse *aPulse,double *X,double *Y,double *EY){
+/*   int StoreData(int verbosity,int i,int NPTS,NMRPulse *aPulse,double *X,double *Y,double *EY){
 
       int N     = aPulse->GetNumPoints(); 
       int start = i - NPTS/2;
@@ -405,6 +405,7 @@ namespace NMRMath{
       return NPTSUseable; 
 
    }
+   */
    //______________________________________________________________________________
    void ClearAnaArrays(int N,double *X,double *Y,double *EY){
       for(int i=0;i<N;i++){
@@ -479,7 +480,7 @@ namespace NMRMath{
 
    }
    //______________________________________________________________________________
-   int CountZeroCrossings(int verbosity,int method,int NPTS,int step,
+/*   int CountZeroCrossings(int verbosity,int method,int NPTS,int step,
                           bool UseTimeRange,double tMin,double tMax,
                           NMRPulse *aPulse,
                           double *X,double *Y,double *EY, 
@@ -603,6 +604,6 @@ namespace NMRMath{
 
       return cntr;   // return number of zero crossings  
    }
-
+*/
 }
 
